@@ -8,17 +8,17 @@ The name Ananí [*ana´ni*] means, *flower of the water* in the language of the 
 I couldn't find someting like this for a project I was thinking about doing. Also, I remembered that some years ago, I saw a friend spend many days creating an API from scratch for a client.
 
 ## API Reference
-### Simple:
+### Simple
 URL: `//API_URL/func_name`
 ```PHP
 func_name();
 ```
-### Argument:
+### Argument
 URL: `//API_URL/func_name/argument`
 ```PHP
-func_name($argument);
+func_name("argument");
 ```
-### Array Argument:
+### Array Argument
 URL: `//API_URL/func_name/argument1/argument2/argument3`
 ```PHP
 func_name(array(
@@ -30,9 +30,9 @@ func_name(array(
 ```
 
 ## Tests
-There is a test function included in `functions.php`. 
+There is a test function included in `functions.php`
 
-URL: `//API_URL/test/whatever/you/want/to/write`.
+URL: `//API_URL/test/whatever/you/want/to/write`
 ```json
 {
     "1": "whatever",
