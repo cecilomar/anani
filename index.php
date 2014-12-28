@@ -16,8 +16,9 @@ include "functions.php";
 // During development, Ananí will only output json. More languages will be added later.
 header("Content-Type: application/json");
 
+
 // Creates an array from the URL, thus creating our inputs. 
-$req_input = explode('/', $_REQUEST['r']);
+$req_input = explode('/', rtrim($_REQUEST['r'], '/'));
 
 // Get the defined functions.
 $def_functions = get_defined_functions();
