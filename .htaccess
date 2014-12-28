@@ -1,0 +1,16 @@
+####################################################################################################
+## @package    	Ananí                                                                             ##
+## @author		Cecil O. Almonte                                                                  ##
+## @website		https://github.com/cecilomar/anani                                                ##
+## @copyright	Copyright (C) Cecilomar Design, Inc. 2014                                         ##
+## @license		http://www.gnu.org/licenses/gpl.txt                                               ##
+## @description	Ananí is a generic API infrastructure written in PHP.                             ##
+####################################################################################################
+## HTACCESS makes possible to use clean URLs in the API by just filtering out the URL making it   ##
+## usable in PHP. Eg:                                                                             ##
+## Using ->		http://example.com/api/this/that                                                  ##
+## Actually ->	http://example.com/api/index.php?r=this/that                                      ##
+####################################################################################################
+
+RewriteEngine On
+RewriteRule    ^([A-Za-z0-9-/-_--]+)/?$    index.php?r=$1    [NC,L]
