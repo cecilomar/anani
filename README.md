@@ -26,7 +26,8 @@ func_name(array(
     2 => "argument2",
     3 => "argument3",
     )
-);```
+);
+```
 
 ## Tests
 There is a test function included in `functions.php`. 
