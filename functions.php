@@ -10,14 +10,11 @@
 // This is where you should write or include your user defined functions.                         //
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Test Function.
+// Test Function, returns date.
 function test($arg){
-	if($arg){
-		$output = date($arg);
-	} else{
-		$output = date('U');
-	}
-	return $output;
+	$arg['custom']['description'] = 'This function just outputs whatever you put in the URL.';
+	$arg['custom']['generated'] = date('r');
+	return $arg;
 }
 
 ?>
